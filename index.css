@@ -1,0 +1,69 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+#app {
+    min-height: 1500px;  
+}
+
+.app-bg {
+    background-color: #e2f0f7;
+}
+
+.app-bg-color {
+    background-color: #185637b8;
+}
+
+.app-text-color {
+    color:  #185637b8;
+}
+
+.app-text-color:hover {
+    color:  #062e1ab8;
+}
+
+
+.header-top-logo-container {
+    display: flex;
+    margin: 10px 0 1px 10px;
+}
+
+#searchbox {
+    font-size: 1.2rem;
+}
+
+.arrow{
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #06A8FF;
+    border-right: 5px solid #06A8FF;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
